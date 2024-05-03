@@ -4,11 +4,15 @@ export default function Updater(){
     const [count, setCount] = useState(0);
 
     function handleIncrement(){
-        setCount(count + 1);
+        setCount(prevCount => prevCount + 1);
+        setCount(prevCount => prevCount + 1);
+        setCount(prevCount => prevCount + 1);
     }
 
     function handleDecrement(){
-        setCount(count - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
+        setCount(c => c - 1);
     }
 
     function handleClear(){
@@ -18,9 +22,9 @@ export default function Updater(){
     return(
         <>
             <h1>{count}</h1>
-            <input type='submit' onClick={handleIncrement}>Increment</input>
-            <input type='submit' onClick={handleDecrement}>Decrement</input>
-            <input type='submit' onClick={handleClear}>Clear</input>
+            <button type='submit' onClick={handleIncrement}>Increase</button>
+            <button type='submit' onClick={handleDecrement}>Decrease</button>
+            <button type='submit' onClick={handleClear}>Clear</button>
         </>
     )
 }

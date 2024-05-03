@@ -1,11 +1,11 @@
-
+import Updater from "./UpdaterFunction"
 
 function App() {
 
 
   return (
     <>
-    
+      <Updater/>
     </>  
   )
 }
