@@ -20,11 +20,11 @@ export default function Updater(){
     }
 
     return(
-        <>
+        <section>
             <h1>{count}</h1>
             <button type='submit' onClick={handleIncrement}>Increase</button>
             <button type='submit' onClick={handleDecrement}>Decrease</button>
             <button type='submit' onClick={handleClear}>Clear</button>
-        </>
+        </section>
     )
 }
