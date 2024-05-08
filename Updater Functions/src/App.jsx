@@ -1,15 +1,15 @@
-import Updater from "./UpdaterFunction"
-import ObjectsUpdate from "./ObjectsUpdater"
-import ArraysUpdate from "./ArraysUpdate"
+import Updater from "./component/UpdaterFunction"
+import ObjectsUpdate from "./component/ObjectsUpdater"
+import ArraysUpdate from "./component/ArraysUpdate"
 
 function App() {
 
 
   return (
     <>
-      <Updater/>
-      <ObjectsUpdate/>
-      <ArraysUpdate/>
+      <Updater/> <hr></hr>
+      <ObjectsUpdate/> <hr></hr>
+      <ArraysUpdate/> <hr></hr>
     </>  
   )
 }
