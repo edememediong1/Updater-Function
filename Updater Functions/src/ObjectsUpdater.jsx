@@ -7,17 +7,27 @@ export default function ObjectsUpdate(){
                                             });
 
     
-    const handleYearChange = () => {
+    const handleYearChange = (event) => {
+        // setCar({...car, year: event.target.value})
+        setCar(c => ({...c, year: event.target.value }))
         
+    }
+
+    const handleMakeChange = (event) => {
+       setCar(c =>({...c, make: event.target.value}))
+    }
+
+    const handleModelChange = (event) => {
+        setCar(c => ({...c, model: event.target.value}))
     }
     
 
     return(
         <div>
                 <p>Your favourite car is: {car.year} {car.make} {car.model}</p>
-                <input type="number" value={car.year}  onChange={}/><br/>
-                <input type="text" value={car.name} onChange={}/> <br/>
-                <input type="text" value={car.model} onChange={}/> <br/>
+                <input type="number" value={car.year}  onChange={handleYearChange}/><br/>
+                <input type="text" value={car.name} onChange={handleMakeChange}/> <br/>
+                <input type="text" value={car.model} onChange={handleModelChange}/> <br/>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import Updater from "./UpdaterFunction"
 import ObjectsUpdate from "./ObjectsUpdater"
+import ArraysUpdate from "./ArraysUpdate"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Updater/>
       <ObjectsUpdate/>
+      <ArraysUpdate/>
     </>  
   )
 }
